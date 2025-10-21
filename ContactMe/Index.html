@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="https://google.com" target="_blank">My Fav Website</a>
+            <a href="[something else]">Something Else</a>
+            <a href="../styles.css">CSS Projects</a>
+        </nav>
+    </header>
+    <!-- This is the introduction to the page-->
+    <section>
+        <h2>Introduction to the page</h2>
+        <p>This is a simulation of a contact page- this does not actually work.</p>
+    </section>
+
+    <!--This is where the contact form lives-->
+    <section>
+        <form class="contact-form">
+            <h2>Contact Me</h2>
+            <p>All areas with a * are required</p>
+            <!--Asking the user for their name-->
+            <label for="name">Name: *</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+            <!--Asking the user for their email-->
+            <label for="email">Email: *</label>
+            <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+            <!--Asking the user for their password-->
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter a password">
+            <!--Asking the user for their phone number-->
+            <label for="phone">Phone Number: *</label>
+            <input type="tel" id="phone" placeholder="(256)765-1000" required>
+            <!--Asking the user for a website-->
+            <label for="website">Website: *</label>
+            <input type="url" id="phone" placeholder="https://www.google.com" required>
+            <!--Asking the user for their age-->
+            <label for="age">Age: *</label>
+            <input type="number" id="age" min="1" max="120" placeholder="20" required>
+            <!--Asking the user for the date of birth-->
+            <label for="dob">Date of Birth: *</label>
+            <input type="date" id="dob" required>
+            <!--Asking the user for their preferred contact time-->
+            <label for="time">Preferred Contact Time:</label>
+            <input type="time" id="time">
+            <!--Ask the user for their favorite color-->
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" value="#007bff">
+            <!--Asking the user for their interest level-->
+            <label for="range">Interest Level (1-10): *</label>
+            <input type="range" id="range" min="1" max="10" value="5" required>
+            <!--Radio buttons-->
+            <label>Preferred Contact Method:</label>
+            <div class="inline-options">
+                <!--Radio for Email-->
+                <label>
+                    <input type="radio" name="contactMethod" value="Email" checked>
+                    Email
+                </label>
+                <!--Radio for Phone-->
+                <label>
+                    <input type="radio" name="contactMethod" value="Phone">
+                    Phone
+                </label>
+                <!--Radio for Text-->
+                <label>
+                    <input type="radio" name="contactMethod" value="Text">
+                    Text
+                </label>
+            </div>
+            <!--Checkboxes-->
+            <label>Services Interest In:</label>
+            <div class="inline-options">
+                <!--Checkbox for Web Design-->
+                <label>
+                    <input type="checkbox" name="service" value="Web Design">
+                    Web Design
+                </label>
+                <!--Checkbox for Consulting-->
+                <label>
+                    <input type="checkbox" name="service" value="Consulting">
+                    Consulting
+                </label>
+                <!--Checkbox for Other-->
+                <label>
+                    <input type="checkbox" name="service" value="Other">
+                    Other
+                </label>
+            </div>
+            <!--Select Dropdown-->
+            <label for="topic">Topic:</label>
+            <select id="topic">
+                <option value="General">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <!--Textarea-->
+            <label for="message">Message: *</label>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <!--Submit Button-->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>Created by Jacob Harrison</footer>
+
+</body>
+
+</html>
